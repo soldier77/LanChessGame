@@ -80,8 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-
-        Log.d("lock", "onClick: "+lock.isHeld());
+//        Log.d("lock", "onClick: "+lock.isHeld());
         if(lock.isHeld()) lock.acquire();
         switch(v.getId()){
             case R.id.setupRoom:

@@ -160,6 +160,7 @@ public class ClientActivity extends AppCompatActivity implements View.OnClickLis
                         intent.putExtra("userName",userName);
                         intent.putExtra("netId",NetId);
                         startActivity(intent);
+                        Log.d("ClientActivity", "signPlayData: startActivity");
                         msocket.close();
                         finish();
                     }
